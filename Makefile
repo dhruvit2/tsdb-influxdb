@@ -60,7 +60,7 @@ docker-run: docker-build
   		-e DOCKER_INFLUXDB_INIT_PASSWORD=password1234 \
   		-e DOCKER_INFLUXDB_INIT_ORG=telemetry \
   		-e DOCKER_INFLUXDB_INIT_BUCKET=gpu_metrics_raw \
-  		-e DOCKER_INFLUXDB_INIT_RETENTION=720h \
+  		-e DOCKER_INFLUXDB_INIT_RETENTION=7200h \
   		-e DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=7h2UjNBHN7ApaRrwz49uyRi6sySH-NaICaNLz4ZP5ROt2Jf8lDfJqtyU_e-45STGcnvD71x5sa9dRlgb9H2kKg== \
   		$(DOCKER_IMAGE)
 	@echo "$(GREEN)InfluxDB started on http://localhost:$(INFLUX_PORT)$(NC)"
