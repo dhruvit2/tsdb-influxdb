@@ -90,7 +90,7 @@ influxdb:
   # Token for API access
   token:
     name: gpu-metrics-token
-    value: my-super-secret-token
+    value: 7h2UjNBHN7ApaRrwz49uyRi6sySH-NaICaNLz4ZP5ROt2Jf8lDfJqtyU_e-45STGcnvD71x5sa9dRlgb9H2kKg==
 
   # Port configuration
   port: 8086
@@ -98,8 +98,8 @@ influxdb:
   # Persistence
   persistence:
     enabled: true
-    storageClass: "standard"
-    size: 10Gi
+    storageClass: "local-path"
+    size: 2Gi
     path: /var/lib/influxdb2
 
 # High Availability Settings
