@@ -98,7 +98,7 @@ influxdb:
   # Persistence
   persistence:
     enabled: true
-    storageClass: "local-path"
+    storageClass: "longhorn-custom"
     size: 2Gi
     path: /var/lib/influxdb2
 
